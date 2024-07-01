@@ -37,6 +37,7 @@
     {"name":"obj_transicao_sala","order":1,"path":"objects/obj_transicao_sala/obj_transicao_sala.yy",},
     {"name":"obj_tree","order":8,"path":"objects/obj_tree/obj_tree.yy",},
     {"name":"obj_wall","order":9,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"Room5","order":6,"path":"rooms/Room5/Room5.yy",},
     {"name":"Videogame_sala1","order":1,"path":"rooms/Videogame_sala1/Videogame_sala1.yy",},
     {"name":"Videogame_sala2","order":3,"path":"rooms/Videogame_sala2/Videogame_sala2.yy",},
     {"name":"Videogame_sala3","order":5,"path":"rooms/Videogame_sala3/Videogame_sala3.yy",},

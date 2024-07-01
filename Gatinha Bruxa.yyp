@@ -63,6 +63,7 @@
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"Videogame_sala1","path":"rooms/Videogame_sala1/Videogame_sala1.yy",},},
     {"id":{"name":"Videogame_sala2","path":"rooms/Videogame_sala2/Videogame_sala2.yy",},},
     {"id":{"name":"Videogame_sala3","path":"rooms/Videogame_sala3/Videogame_sala3.yy",},},
@@ -115,6 +116,7 @@
     {"roomId":{"name":"Videogame_sala1","path":"rooms/Videogame_sala1/Videogame_sala1.yy",},},
     {"roomId":{"name":"Videogame_sala2","path":"rooms/Videogame_sala2/Videogame_sala2.yy",},},
     {"roomId":{"name":"Videogame_sala3","path":"rooms/Videogame_sala3/Videogame_sala3.yy",},},
+    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
