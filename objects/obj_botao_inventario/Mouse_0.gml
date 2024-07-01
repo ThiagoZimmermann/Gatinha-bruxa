@@ -1,0 +1,14 @@
+/// @description Inserir descrição aqui
+// Você pode escrever seu código neste editor
+
+if obj_margarida.estado_player == scr_margarida_andando {
+	
+	obj_margarida.estado_player = scr_margarida_inventario;
+	image_index = 0;
+
+}
+
+
+
+
+
