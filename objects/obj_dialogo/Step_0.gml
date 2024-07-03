@@ -12,7 +12,7 @@ if !escolha { // se não estiver no modo escolha
 			pagina++; // sim, avançar
 			} else {
 				instance_destroy(obj_dialogo); // não, destruir caixa de texto	
-				obj_margarida.estado_player = scr_margarida_andando;
+				obj_margarida.estado_margarida = scr_margarida_andando;
 				obj_par_npcs.indo_dialogar = false;
 			
 		}	

@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 function scr_player_andando(){
 	
+#region SISTEMA BASICO MOVIMENTO, SPRITE, COLISAO PORTAS
+
 // SISTEMA DE MOVIMENTO
 
 	// Definindo teclas de movimento
@@ -170,6 +172,8 @@ function scr_player_andando(){
 
 	x += hveloc;
 	y += vveloc;
+
+
 	
 // ALTERAR SPRITE
 
@@ -214,7 +218,8 @@ function scr_player_andando(){
 				sprite_index = spr_personagem_correndo_direita;
 				dir = "direita";
 			}
-			
+#endregion
+
 	/* EXEMPLO PARA MUDAR DE ESTADO:
 	
 		if keyboard_check(ord("Z")) and place_meeting(x +2, y+2, obj_baú){
@@ -228,80 +233,29 @@ function scr_player_andando(){
 	// Estado baú
 	if (place_meeting(x+2, y+2, obj_bau) or place_meeting(x-2,y-2, obj_bau)) and keyboard_check_released(ord("Z")){
 		
-		obj_margarida.estado_player = scr_player_bau;
+		estado_player = scr_player_bau;
 		
-		switch dir {
-			
-			case "cima":
-				sprite_index = spr_personagem_parado_cima;
-			break;
-			
-			case "baixo":
-				sprite_index = spr_personagem_parado_baixo;
-			break;
-			
-			case "esquerda":
-				sprite_index = spr_personagem_parado_esquerda;
-			break;
-			
-			case "direita":
-				sprite_index = spr_personagem_parado_direita;
-			break;
-		}
+		switch_dir();
 		
 	}
 	
 	// Estado Menu
 	if keyboard_check_released(ord("X")){
 		
-		obj_margarida.estado_player = scr_player_menu;
+		estado_player = scr_player_menu;
 		
-		switch dir {
-			
-			case "cima":
-				sprite_index = spr_personagem_parado_cima;
-			break;
-			
-			case "baixo":
-				sprite_index = spr_personagem_parado_baixo;
-			break;
-			
-			case "esquerda":
-				sprite_index = spr_personagem_parado_esquerda;
-			break;
-			
-			case "direita":
-				sprite_index = spr_personagem_parado_direita;
-			break;
-		}
+		switch_dir();
 				
 		
 	}
 	
 	// Diálogo
 	
-	if distance_to_object(obj_par_npcs) <= 10 and keyboard_check_pressed(ord("Z")){
+	if distance_to_object(obj_par_npc_jogo) <= 10 and keyboard_check_pressed(ord("Z")){
 	
-		obj_margarida.estado_player = scr_dialogo;
+		estado_player = scr_dialogo;
 		
-			switch dir {
-			
-			case "cima":
-				sprite_index = spr_personagem_parado_cima;
-			break;
-			
-			case "baixo":
-				sprite_index = spr_personagem_parado_baixo;
-			break;
-			
-			case "esquerda":
-				sprite_index = spr_personagem_parado_esquerda;
-			break;
-			
-			case "direita":
-				sprite_index = spr_personagem_parado_direita;
-			break;
-		}
+		switch_dir();
 	
 	}
 
@@ -315,7 +269,7 @@ function scr_player_bau(){
 	
 	if keyboard_check_released(ord("Z")){
 		
-		obj_margarida.estado_player = scr_player_andando;
+		estado_player = scr_player_andando;
 		
 	}
 	
@@ -325,7 +279,7 @@ function scr_player_menu(){
 	
 	if keyboard_check_released(ord("X")) {
 		
-		obj_margarida.estado_player = scr_player_andando;
+		estado_player = scr_player_andando;
 	
 	}
 	
@@ -335,7 +289,7 @@ function scr_player_inventario(){
 	
 	if keyboard_check_released(ord("X")) {
 		
-		obj_margarida.estado_player = scr_player_andando;
+		estado_player = scr_player_andando;
 	
 	}
 	
@@ -350,9 +304,3 @@ function scr_dialogo(){ // sistema de diálogo, descrito em scripts_margarida
 
 }
 
-function scr_player_start() {
- 
-	visible = false;
-	
-		
-}

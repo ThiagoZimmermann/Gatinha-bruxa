@@ -3,7 +3,7 @@
 
 // Chamando o script do estado
 // Chamando o script do estado
-	script_execute(obj_margarida.estado_player);
+	script_execute(estado_player);
 
 #region sistema de movimento, apenas comentário
 /* 

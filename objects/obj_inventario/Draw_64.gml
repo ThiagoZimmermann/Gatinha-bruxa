@@ -194,8 +194,9 @@ if inventario == true {
 							// Att.: aqui tá falando apenas item 3, talvez seja necessário mudar para item 3, mundo 1
 							if item_selecionado == grid_itens[# Infos.Item, 3] {
 							
+								
 								room_goto_next()
-								obj_margarida.estado_player = scr_player_start;
+								obj_margarida.estado_margarida = scr_videogame;
 								
 		
 							} else { // Senão, é um item normal

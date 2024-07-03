@@ -158,7 +158,7 @@ function scr_margarida_andando(){
 	
 		if obj_par_npcs.indo_dialogar {
 
-			estado_player = scr_margarida_dialogo;
+			estado_margarida = scr_margarida_dialogo;
 		
 		}
 		
@@ -207,4 +207,10 @@ function scr_margarida_dialogo() {
 	
 }
 
-
+function scr_videogame() {
+	
+	instance_destroy();
+	instance_destroy(obj_controle_mundo);
+	instance_destroy(obj_inventario);
+		
+}

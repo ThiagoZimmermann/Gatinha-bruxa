@@ -3,7 +3,7 @@
 
 // falando pra var inventario se ta true ou false
 
-switch (obj_margarida.estado_player) {
+switch (obj_margarida.estado_margarida) {
 
 	case scr_margarida_inventario:
 
@@ -12,6 +12,12 @@ switch (obj_margarida.estado_player) {
 		break;
 
 	case scr_margarida_andando:
+
+		inventario = false;
+		
+		break;
+	
+		case scr_player_andando:
 
 		inventario = false;
 		

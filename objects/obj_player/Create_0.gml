@@ -25,7 +25,8 @@ window_center()
 // ESTADO: atribuindo um script (um grupo de códigos que podemos chamá-los) a uma vairável, a qual podemos variar
 // de acordo com o momento/ação do player.
 
-	obj_margarida.estado_player = scr_player_andando;
+estado_player = scr_player_andando;
+
 	
 // Profundidade do sprite 
 
@@ -33,3 +34,32 @@ window_center()
 	
 	npc = -1;
 	
+
+// Funções locais
+
+switch_dir = function() {
+	
+			switch dir {
+			
+			case "cima":
+				sprite_index = spr_personagem_parado_cima;
+			break;
+			
+			case "baixo":
+				sprite_index = spr_personagem_parado_baixo;
+			break;
+			
+			case "esquerda":
+				sprite_index = spr_personagem_parado_esquerda;
+			break;
+			
+			case "direita":
+				sprite_index = spr_personagem_parado_direita;
+			break;
+		}
+	
+}
+
+
+
+

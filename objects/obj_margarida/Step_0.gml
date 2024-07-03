@@ -3,6 +3,6 @@
 
 	// SISTEMA DE MOVIMENTO
 
-script_execute(estado_player);
+script_execute(estado_margarida);
 
 

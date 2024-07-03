@@ -3,12 +3,12 @@
 
 	if keyboard_check_released(ord("C")){
 		
-		if pagina < array_length(texto) -1 { // tem algum texto pra avançar?
+		if pagina < array_length(texto) { // tem algum texto pra avançar?
 			pagina++; // sim, avançar
 			} else {
 				instance_destroy(obj_dialogo_jogo); // não, destruir caixa de texto	
-				obj_margarida.estado_player = scr_player_andando;
-				obj_margarida.indo_dialogar = false;
+				obj_player.estado_player = scr_player_andando;
+				obj_par_npc_jogo.indo_dialogar = false;
 				
 			}
 			

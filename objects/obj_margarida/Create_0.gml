@@ -33,7 +33,7 @@
 	
 // estado
 
-	estado_player = scr_margarida_andando;
+	estado_margarida = scr_margarida_andando;
 	
 	
 // Profundidade do sprite, para ficar na frente de objs
@@ -43,7 +43,3 @@ depth = -y
 npc = -1;
 
 visible = true;
-
-
-
-
