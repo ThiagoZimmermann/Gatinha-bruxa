@@ -28,7 +28,7 @@ if obj_player.estado_player = scr_player_inventario {
 
 if instance_exists(obj_player) {
 
-	draw_sprite_ext(spr_tela, 0, 0, 0, 0.35, 0.35, 0, c_white, 1);
+	draw_sprite_ext(spr_tela, 0, 0, 0, 0.337, 0.337, 0, c_white, 1);
 	
 
 }

@@ -127,41 +127,19 @@ function scr_player_andando(){
 #region Colisão portas
 
 
-	if place_meeting(x+hveloc, y, obj_transicao_sala) {
+	if place_meeting(x+10, y, obj_par_portas) || place_meeting(x-10,y,obj_par_portas) || place_meeting(x, y+10, obj_par_portas) || place_meeting(x,y-10,obj_par_portas){
 			
-			var _porta = instance_nearest(x,y, obj_transicao_sala);
-			show_debug_message(_porta.sala);
-	
-			hveloc = 0;
+			var _porta = instance_nearest(x,y, obj_par_portas);
 		
 			if keyboard_check_released(ord("Z")) {
-	
-			room_goto(_porta.sala);
-
-			x = _porta.personagemx;
-
-			y = _porta.personagemy;
-
-		} 
-	
-	}
-	
-	if place_meeting(x, y+vveloc, obj_transicao_sala) {
-		
-			vveloc = 0;
 			
-			var _porta = instance_nearest(x,y, obj_transicao_sala);
-			
-			if keyboard_check_released(ord("Z")) {
-	
-			room_goto(_porta.sala);
-
-			x = _porta.personagemx;
-
-			y = _porta.personagemy;
-
-		} 
-	
+				var _tran = instance_create_layer(0,0,"Instances",obj_transicao)
+				
+				_tran.sala = _porta.sala;
+				_tran.personagemx = _porta.personagemx;
+				_tran.personagemy = _porta.personagemy;
+				
+			} 
 	}
 
 #endregion

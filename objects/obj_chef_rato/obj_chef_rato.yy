@@ -10,8 +10,8 @@
     "path":"folders/Objetos/Joguinho.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_npcs",
-    "path":"objects/obj_par_npcs/obj_par_npcs.yy",
+    "name":"obj_par_npc_jogo",
+    "path":"objects/obj_par_npc_jogo/obj_par_npc_jogo.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

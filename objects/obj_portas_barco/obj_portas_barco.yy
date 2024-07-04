@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_portas_barco",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_portas_barco",
   "overriddenProperties":[],
@@ -12,8 +10,8 @@
     "path":"folders/Objetos/Joguinho.yy",
   },
   "parentObjectId":{
-    "name":"obj_transicao_sala",
-    "path":"objects/obj_transicao_sala/obj_transicao_sala.yy",
+    "name":"obj_par_portas",
+    "path":"objects/obj_par_portas/obj_par_portas.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

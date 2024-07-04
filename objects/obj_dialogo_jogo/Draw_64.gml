@@ -12,7 +12,7 @@ var _w = c_white;
 	var _textoa = string_height_ext(texto[pagina],10,200);
 	
 // Desenhando a caixa de texto
-draw_rectangle_color(0, guia/10*7, guil, guia, _c, _c, _c, _c, false);
-draw_rectangle_color(0, guia/10*7, guil, guia, _w, _w, _w, _w, true);
-draw_text_ext(0, guia/10*7, texto[pagina], 10, 200);
+draw_rectangle_color(31, guia/10*6, 310, 161, _c, _c, _c, _c, false);
+draw_rectangle_color(31, guia/10*6, 310, 161, _w, _w, _w, _w, true);
+draw_text_ext(31, guia/10*6, texto[pagina], 10, 200);
 }

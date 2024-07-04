@@ -193,10 +193,10 @@ if inventario == true {
 							// Se for o VIDEOGAME, entrar no mundo virtual
 							// Att.: aqui tá falando apenas item 3, talvez seja necessário mudar para item 3, mundo 1
 							if item_selecionado == grid_itens[# Infos.Item, 3] {
-							
 								
-								room_goto_next()
 								obj_margarida.estado_margarida = scr_videogame;
+								var _tran = instance_create_layer(0,0,"Instances",obj_transicao_mundos)
+								_tran.sala = Videogame_sala1;
 								
 		
 							} else { // Senão, é um item normal

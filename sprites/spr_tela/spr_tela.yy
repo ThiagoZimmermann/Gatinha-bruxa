@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_tela",
   "bboxMode":0,
-  "bbox_bottom":569,
+  "bbox_bottom":567,
   "bbox_left":0,
-  "bbox_right":1007,
+  "bbox_right":1004,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":570,
+  "height":568,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d935aa11-be4e-4742-ab14-913bcc5fb466","blendMode":0,"displayName":"default","isLocked":false,"name":"d935aa11-be4e-4742-ab14-913bcc5fb466","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1008,
+  "width":1005,
 }

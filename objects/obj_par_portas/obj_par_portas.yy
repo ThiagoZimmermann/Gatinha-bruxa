@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_transicao_sala",
+  "%Name":"obj_par_portas",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_transicao_sala",
+  "name":"obj_par_portas",
   "overriddenProperties":[],
   "parent":{
     "name":"Joguinho",
     "path":"folders/Objetos/Joguinho.yy",
   },
-  "parentObjectId":null,
-  "persistent":false,
+  "parentObjectId":{
+    "name":"obj_wall",
+    "path":"objects/obj_wall/obj_wall.yy",
+  },
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_transicao",
-    "path":"sprites/spr_transicao/spr_transicao.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

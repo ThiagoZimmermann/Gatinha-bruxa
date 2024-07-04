@@ -27,6 +27,9 @@ window_center()
 
 estado_player = scr_player_andando;
 
+	instance_destroy(obj_margarida);
+	instance_destroy(obj_controle_mundo);
+		
 	
 // Profundidade do sprite 
 

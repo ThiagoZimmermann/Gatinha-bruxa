@@ -209,8 +209,5 @@ function scr_margarida_dialogo() {
 
 function scr_videogame() {
 	
-	instance_destroy();
-	instance_destroy(obj_controle_mundo);
-	instance_destroy(obj_inventario);
-		
+	
 }
